@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+ul{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(102, 0, 20);
+    font-size: 18px;
+    font-family:Merriweather;
+    margin-left: 5px;
+}
+.active{
+    color: rgb(255, 0, 0);
+}
+#navbar{
+    background-color: none;
+}
