@@ -1,0 +1,11 @@
+li{
+    list-style-type: none;
+    display: inline;
+    
+}
+
+a{
+    text-decoration: none !important;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
