@@ -64,3 +64,13 @@ main#login-container{
     padding: 5px;
     font-size: 20px;
 }
+main#gallery{
+    background-color: rgb(147, 205, 255);
+}
+video{
+    margin-top: 100px;
+    border: solid;
+    border-color: bisque;
+    border-width: 10px;
+    border-radius: 50px;
+}
