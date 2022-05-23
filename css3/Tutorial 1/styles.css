@@ -1,0 +1,53 @@
+/*
+Select by ID
+Select by class
+select by Tag name
+select attribute name
+fieldset{
+
+    border-color: brown;
+    border-style: dashed;
+    border-width: 2px;
+}
+fieldset{
+    border:2px dashed brown;
+    border-top: 5px solid purple;
+}
+
+
+fieldset{
+    border-image: url(https://www.searchenginejournal.com/wp-content/uploads/2018/10/How-to-Boost-Your-Images%E2%80%99-Visibility-on-Google-Images-760x400.png) 20% space;
+    border-width: 10px;
+    border-style: solid;
+}
+*/
+#main{
+    border: 2px solid blue;
+}
+.container{
+    border: 4px solid purple !important;
+}
+
+option[value="RTX 3090"]{
+    background-color: black;
+    color: aliceblue;
+}
+label[name="computer1"]{
+    color: rgb(255, 0, 0);
+}
+input[name="computer"]{
+    background-color: aquamarine;
+}
+input[type="radio"]{
+    background-color: aqua;
+}
+body{
+    background-image: url(https://i.redd.it/c3uhsgo1vx541.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    background-position: bottom;
+}
+fieldset{
+    height: 100vh;
+}
