@@ -13,7 +13,7 @@ body{
     border: 10px solid red;
     outline: 10px saddlebrown solid;
 }
-.container>p{
+.container> p{
     color: whitesmoke;
     font-size: 20pt;
     text-align: center;
@@ -28,6 +28,7 @@ body{
     padding: 1em;
     padding-right: 0;
     color: aliceblue;
+    text-align: center;
 }
 .content > a{
     color: white;
@@ -43,14 +44,20 @@ body{
 }
 
 .menu{
-
+    border-bottom: 1px dashed #dcffa7;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 0;
 }
 
 .menu > li{
     list-style-type: none;
+    display: inline;
+    margin-left: 15px;
 }
 
 .menu > li:hover{
     color: black;
     background-color: azure;
+    padding: 0.2em;
 }
