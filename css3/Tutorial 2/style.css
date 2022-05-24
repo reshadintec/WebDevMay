@@ -88,3 +88,53 @@ table#user_records {
     background-color: darkcyan;
     color: aquamarine;
 }
+.boxcontainer{
+    position: relative;
+}
+.boxcontainer > div{
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    position: absolute;
+    top: 50px;
+}
+.box1{
+    background-color: blue;
+    left: 10px;
+    top: 10px;
+    transform: rotate(10deg);
+    z-index: 1;
+
+}
+.box2{
+    background-color: chocolate;
+    left: 20px;
+    top: 20px;
+    transform: rotate(20deg);
+    z-index: 2;
+
+}
+.box3{
+    background-color: blueviolet;
+    left: 30px;
+    top: 30px;
+    transform: rotate(30deg);
+    z-index: 3;
+
+}
+.box4{
+    background-color: darkgreen;
+    left: 40px;
+    top: 40px;
+    transform: rotate(40deg);
+    z-index: 4;
+}
+footer{
+    background-color: black;
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color:white;
+    bottom: 0;
+}
