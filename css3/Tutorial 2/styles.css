@@ -31,10 +31,12 @@ body{
 }
 .text{
 margin-right: 10%;
+width: 50%;
 }
 .text h1{
     font-size:60px;
     color: rgb(186, 78, 0);
+    margin-right: 20px;
 }
 .text p{
     font-size: 20px;
@@ -58,9 +60,9 @@ margin-right: 10%;
     background-color: #2f1300;
     color: white;
 }
-.slider img{
+/* .slider img{
    width: 50em;
-}
+} */
 .flex-container {
 
     display: flex;
@@ -103,4 +105,8 @@ footer{
     font-size: 18px;
     line-height: 24px;
     border-radius: 4px;
+}
+.hero-img{
+    max-width: 100%;
+    border-radius: 20px;
 }
