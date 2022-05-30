@@ -1,0 +1,102 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    padding: 3px;
+    color: aliceblue;
+    text-align: center;
+}
+
+nav{
+    background-color: blue;
+    padding: 3px;
+    color: aliceblue;
+    text-align: center;
+}
+nav > ul{
+    list-style-type: none;
+    
+}
+nav > ul > li{
+    display: inline;
+    font-size: 20pt;
+    margin-right: 1em;
+}
+aside{
+    background-color: bisque;
+    padding: 3px;
+    width: 20%;
+    float: left;
+    margin: 5px;
+}
+
+aside > ul {
+    list-style-type: none;
+}
+
+aside > ul > li{
+    font-size: 18pt;
+}
+main{
+    background-color: brown;
+    width: 78%;
+    float: right;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer{
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px;
+
+}
+
+article{
+    /* height: 80px; */
+    background-color: yellow;
+    color: black;
+    overflow: hidden;
+    width: 500px;
+}
+
+article > p{
+    /* text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden; */
+    column-count: 2;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+}
+.box{
+    background: whitesmoke;
+    height: 300px;
+    color: black;
+    animation: myAnimation ease-in-out 6s infinite;
+}
+@keyframes myAnimation{
+    0%{
+        transform: rotate(25deg);
+    }
+    25%{
+        transform: rotate(-25deg);
+    }
+    75%{
+        transform: rotate(25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
