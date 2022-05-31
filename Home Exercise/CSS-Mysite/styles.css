@@ -1,15 +1,5 @@
 body{
     margin: 0;
-<<<<<<< HEAD
-}
-div{
-    background-color: #F4EEFF;
-}
-h1{
-    margin-top: 0;
-    margin-right: 0;
-}
-=======
     text-align: center;
 }
 .bottom-cloud{
@@ -35,4 +25,3 @@ h1{
     position:relative;
     padding-top: 100px;
 }
->>>>>>> a9680cdfe5bc992efc941437b1a5de30d4a89070
