@@ -1,0 +1,20 @@
+h2{
+    color: brown;
+}
+
+h3{
+    color:chocolate;
+
+}
+p{
+    color:rgb(0, 0, 0);
+    font-size:large;
+}
+table,th, td{
+    border-style: solid;
+    border-color: rgb(0, 44, 125);
+    border-collapse:collapse ;
+}
+th{
+    color:red;
+}
