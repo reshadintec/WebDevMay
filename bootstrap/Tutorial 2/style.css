@@ -3,4 +3,6 @@
     object-fit: cover;
     object-position: center;
 }
-
+#customicon{
+color: blue;
+}
