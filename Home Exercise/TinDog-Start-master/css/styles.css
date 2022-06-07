@@ -1,0 +1,36 @@
+body{
+font-family: Montserrat;
+}
+
+h1{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: white;
+}
+#hero{
+    margin-top: 4.5rem;
+}
+
+#hero-img{
+    width: 70%;
+    transform: rotate(25deg);
+}
+#title{
+    background-color: #ff4c68;
+}
+
+.container-fluid{
+    padding: 3% 15%;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: Montserrat-Light;
+}

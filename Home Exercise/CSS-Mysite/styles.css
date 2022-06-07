@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.bottom-cloud{
+    position:absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.btn {
+  background: #4008da;
+  background-image: -webkit-linear-gradient(top, #4008da, #6240bd);
+  background-image: -moz-linear-gradient(top, #4008da, #6240bd);
+  background-image: -ms-linear-gradient(top, #4008da, #6240bd);
+  background-image: -o-linear-gradient(top, #4008da, #6240bd);
+  background-image: linear-gradient(to bottom, #4008da, #6240bd);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8d6eff;
+  background-image: -webkit-linear-gradient(top, #8d6eff, #ac98f5);
+  background-image: -moz-linear-gradient(top, #8d6eff, #ac98f5);
+  background-image: -ms-linear-gradient(top, #8d6eff, #ac98f5);
+  background-image: -o-linear-gradient(top, #8d6eff, #ac98f5);
+  background-image: linear-gradient(to bottom, #8d6eff, #ac98f5);
+  text-decoration: none;
+}
+h1{
+    margin: 50px auto 0 auto;
+
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #9375ff;
+    line-height: 2;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #9375ff;
+    font-weight: normal;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #9375ff;
+    font-size: 1.3rem;
+}
+.pro{
+    text-decoration: underline;
+}
+.top-cloud{
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+.top-container{
+    background-color: #FEFEDF;
+    position:relative;
+    padding-top: 100px;
+}
+
+.skill-row{
+    width: 50%;
+    margin:100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.design-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.dev-img{
+    width: 25%;
+    float:right;
+    margin-left: 30px;
+}
+.profile{
+    width: 40%;
+    margin:50px auto;
+}
+.profile > img{
+    width: 30%;
+}
+.profile > p{
+    line-height: 2;
+}
+hr{
+    width: 10%;
+    border: 10px dotted;
+    border-style: none none dotted;
+    color: #4008da40;
+    margin: 60px auto;
+}
+.bottom-text{
+    width: 40%;
+    margin:60px auto;
+    line-height: 2;
+}
+.bottom-container{
+    background-color: #FEFEDF;
+    margin: 50px auto 0;
+    padding: 50px 0 20px;
+}
+.footer-link{
+    padding-right:20px;
+    color:#4008da;
+    text-decoration: none;
+}
+.bottom-container> p{
+    margin-top: 20px;
+    line-height: 2;
+    color:#452596
+}
