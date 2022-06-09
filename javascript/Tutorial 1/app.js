@@ -57,10 +57,30 @@
 // result=studentage>=18 ? `${studentname} is allowd` : `${studentname} is not allowed`;
 // console.log(result);
 
-var temerature = prompt("Please enter temprature", "");
-if (temerature>=20) {
-    document.getElementById("message").innerText="It is better not to wear a scarf"
-}
-    else{
-        document.getElementById("message").innerText="Consider wearing a warm scarf"
-    }
+// var temerature = prompt("Please enter temprature", "");
+// if (temerature>=20) {
+//     document.getElementById("message").innerText="It is better not to wear a scarf"
+// }
+//     else{
+//         document.getElementById("message").innerText="Consider wearing a warm scarf"
+//     }
+// var myName = "Angela";
+// var yourName = prompt("what is your name");
+// alert("My name is "+ myName + ", Welcome to my course " + yourName);
+// var gameLevel = 1;
+// gameLevel = 2;
+// alert("Your level is currently " + gameLevel);
+// var a=8;
+// var b=3;
+// var c=a;
+// a=b;
+// b=c;
+// console.log("a is " + a);
+// console.log("b is " + b);
+// var message = "Helo and have a good day";
+// var yourName= prompt("What is your name?");
+// alert (message + " " + yourName + "." + " Your name" + " has " + yourName.length + " charachters.");
+var yourText = prompt ("Enter your text for validation");
+var twitterLimit=140;
+alert("You have typed " + yourText.length + " characters." + " You still have " + (twitterLimit-yourText.length) + " characters left");
+
