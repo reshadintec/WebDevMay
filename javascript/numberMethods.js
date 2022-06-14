@@ -11,5 +11,5 @@ var n7=10e+2;
 
 //toString()
 var result = n2.toString();
-console.log(result instanceof(result);
+console.log(result, typeof result);
 
