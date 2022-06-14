@@ -13,8 +13,8 @@ function lifeInWeeks(age) {
 
     ////BMI Calculator Function
     function bmiCalculator(weight,height){
-        var bmi = Math.round( weight / (Math.pow(height,2)) );
+        var bmi = Math.round( weight / (height*height) );
         return bmi;
     }
-    console.log(bmiCalculator(82,175));
+    console.log(bmiCalculator(73,1.75));
     
