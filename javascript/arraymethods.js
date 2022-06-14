@@ -30,9 +30,27 @@ result= myNumber.sort(function(a,b){
 //concat method
 result=myNumber.concat(myLetters);
 
-//iteration method
+// //iteration method
 
+// for(var i=0;i<result.length;i++)
+// {
+// console.log(result[i])
+// }
 
+// result.forEach(function(value,index,arrayitself){
+//     console.log(value,index,arrayitself)
 
-//result=myArr;
-console.log(result);
+// })
+
+// var total = 0;
+// for(let i=0; i<myNumber.length; i++){
+//     total+=myNumber[i];
+//     console.log(total);
+// }
+
+let sum=0;
+myNumber.forEach(sumFunction);
+function sumFunction(item){
+    sum+=item;
+}
+console.log(sum);
