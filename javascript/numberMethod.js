@@ -12,4 +12,6 @@
 var x=prompt("Enter a number");
 var y=prompt("Enter your second number");
 var result=parseInt(x) && parseInt(y);
-console.log(result);
+var z=parseInt(x)+parseInt(y);
+result!=NaN ?console.log("The sum of two number is " +z):"You didn't enter an actual number"
+
