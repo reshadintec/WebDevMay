@@ -177,16 +177,34 @@ let post=[{
     }
   }]
 
-  result=post.filter(value=>{
-    return value.id===2;
-  }
-  )
+//   result=post.filter(value=>{
+//     return value.id===2;
+//   }
+//   )
 
 
-function findPostById(id){
-    return post.filter(value=>value.id===id)
+// function findPostById(id){
+//     return post.filter(value=>value.id===id)
+// }
+//     result=findPostById(1);
+//   console.log(result);
+function filterData(myArr){
+  ////filter here
+  return myArr += " INTEC";
 }
-    result=findPostById(1);
-  console.log(result);
 
+function changeLetterToUpperCase(filterData){
+  return filterData.toUpperCase();
 
+}
+
+function printService(getFilterData){
+  const getResult = filterData(changeLetterToUpperCase(getFilterData));
+  console.log(getResult);
+
+}
+
+printService("Hello WOrld");
+»Æ;Lock,jmnbtre46780-
+9
+0
