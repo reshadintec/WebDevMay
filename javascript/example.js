@@ -63,3 +63,5 @@ const computer = {
 }
 computer.turnon();
 computer.turnOff();
+console.log("HI");
+
