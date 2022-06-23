@@ -59,7 +59,7 @@ class Calc{
             this.result= undefined;
         }
     }
-    toString(){
+    toString( ){
         console.log(`${this.number1} ${this.operator} ${this.number2} = ${this.result}`)
     }
 }
@@ -82,7 +82,6 @@ app4.toString();
 let app5 = new Calc (10,3,'%');
 app5.GetResult();
 app5.toString();
-
-let app6 = new Calc (3,1,'^');
+let app6 = new Calc(20,4,'&');
 app6.GetResult();
 app6.toString();
