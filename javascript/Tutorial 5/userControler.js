@@ -31,4 +31,5 @@ class Admin extends User{
     }
 }
 
-let app = new Admin ('admi
+let app = new Admin("admin", "123", "Granted");
+console.log (app);
