@@ -10,3 +10,4 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 }
 // var sound= new Audio("sounds/tom-1.mp3");
 //     sound.play();
+///just for sync
