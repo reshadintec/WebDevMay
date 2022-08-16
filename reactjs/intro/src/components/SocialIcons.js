@@ -1,1 +1,2 @@
-// module.exports = 'SocialIcons';
+// module social icons
+module.exports = 'SocialIcons';
