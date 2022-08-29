@@ -7,14 +7,13 @@
 }
 
 .carousel-item {
-    height: 93vh;
+    height: 50vh;
 }
 
 .carousel-item > img{
-    object-fit: contain !important;
-    object-position: top !important;
+    object-fit: cover !important;
+    object-position: center !important;
     height: 100%;
-    
 }
 
 figure{
@@ -110,19 +109,16 @@ img{
     padding:10px
 }
 
-.movie-img {
-    padding: 200px 0 !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+/* movie image in jumbotron element */
+.movie-img{
+    background-size: 100% !important;
     background-position: center !important;
-    /* filter:blur(2px) !important; */
 }
-
+/* movie title in jumbotron element */
 .movie-title{
-    text-shadow: 12px 8px 15px #84CACE;
-    filter:blur(0px) !important;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
 .bg-none{
-    background: none !important;
+    background-color: transparent !important;
 }
