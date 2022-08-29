@@ -6,7 +6,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/3254550/pexels-photo-3254550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="https://wallpaper.dog/large/694692.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/3098796/pexels-photo-3098796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://cdn.wallpapersafari.com/90/49/IqYWf2.jpg"
           alt="Second slide"
         />
 
@@ -29,7 +29,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/758773/pexels-photo-758773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="https://www.wallpapertip.com/wmimgs/30-301133_movie-hd-wallpapers-1080p-hd-wallpapers-1080p-hollywood.jpg"
           alt="Third slide"
         />
 
