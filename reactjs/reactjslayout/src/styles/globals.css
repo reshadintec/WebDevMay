@@ -109,3 +109,20 @@ img{
 .movie:hover{
     padding:10px
 }
+
+.movie-img {
+    padding: 200px 0 !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    /* filter:blur(2px) !important; */
+}
+
+.movie-title{
+    text-shadow: 12px 8px 15px #84CACE;
+    filter:blur(0px) !important;
+}
+
+.bg-none{
+    background: none !important;
+}
