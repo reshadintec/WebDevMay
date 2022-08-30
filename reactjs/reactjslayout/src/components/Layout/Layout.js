@@ -1,15 +1,15 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
-import {BrowserRouter} from 'react-router-dom'
 
-function Layout({ children}) {
+function Layout({ children,searchResultHandler }) {
   return (
     <BrowserRouter>
-        <Header/>
-        {children}
-        <Footer/>
-        </BrowserRouter>
+      <Header searchResultHandler={searchResultHandler} />
+      {children}
+      <Footer />
+    </BrowserRouter>
   )
 }
 

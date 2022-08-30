@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from 'react'
-import { CardGroup, Container } from 'react-bootstrap'
+import { Button, ButtonGroup, CardGroup, Container } from 'react-bootstrap'
 import CarouselComponent from './components/Homepage/CarouselComponent'
 import MovieCard from './components/Homepage/MovieCard'
 
 function Home() {
   const [movies,setMovies] = useState([])
+  const [page,setPage] = useState(1)
+
+  const nextPage = ()=> setPage(page+1)
+  const prevPage = ()=>{
+    if(page <=1){
+      return
+    }else{
+      setPage(page-1)
+    }
+  }
 
   const fetchMovies = async ()=>{
-    let response = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=07a61de5b731a869bc9cec8e25d2c8a8&language=en-US&page=1')
+    let response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=07a61de5b731a869bc9cec8e25d2c8a8&language=en-US&page=${page}`)
     let data = await response.json()
     setMovies(data.results)
   }
 
   useEffect(()=>{
     fetchMovies()
-  },[])
+  },[page])
   
   return (
     <>
@@ -34,6 +44,13 @@ function Home() {
           ''
         }
       </ul>
+
+      <div className="pagination bg-dark d-flex justify-content-center text-center pb-5 py-2">
+      <ButtonGroup aria-label="Basic example">
+      <Button variant="primary" onClick={prevPage}>Previous</Button>
+      <Button variant="primary" onClick={nextPage}>Next</Button>
+    </ButtonGroup>
+      </div>
     </>
   )
 }

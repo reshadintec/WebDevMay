@@ -1,9 +1,8 @@
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import {FaTwitterSquare,FaInstagramSquare } from 'react-icons/fa'
-import {AiFillHtml5,AiFillInstagram,} from 'react-icons/ai'
-function Header() {
+import {FaTwitter,FaInstagram,FaLinkedin} from 'react-icons/fa'
+function Header({searchResultHandler}) {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -14,16 +13,16 @@ function Header() {
                         <Link to={'/'} className="nav-link text-decoration-none">Homepage</Link>
                         <Link to={'/contact'} className="nav-link text-decoration-none">Contact</Link>
                         <NavDropdown title="Categories" id="collasible-nav-dropdown">
-                        <Link to={'/movies/adventure'} className="dropdown-item text-decoration-none">Adventure</Link>
+                        <Link to={'/search'} onClick={searchResultHandler} className="dropdown-item text-decoration-none">Adventure</Link>
 
                             {/* <NavDropdown.Divider /> */}
                             <Link to={'/movies/comedy'} className="dropdown-item text-decoration-none">Comedy</Link>
                         </NavDropdown>
                     </Nav>
-                    <Nav>
-                        <a className='nav-link'><FaTwitterSquare className='display-6 text-info'/></a>
-                        <a className='nav-link'><AiFillHtml5 className='display-6 text-info'/></a>
-                        <a className='nav-link'><FaInstagramSquare className='display-6 instagram'/></a>
+                    <Nav className="d-flex flex-row">
+                        <Link to={'/#social'}><FaTwitter fill='white' className="display-6 bg-primary p-1 rounded-1 mx-1"/></Link>
+                        <Link to={'/#social'}><FaLinkedin fill='white' className="display-6 bg-primary p-1 rounded-1 me-1"/></Link>
+                        <Link to={'/#social'}><FaInstagram fill='white' className="display-6 bg-instagram p-1 rounded-1"/></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -32,3 +31,14 @@ function Header() {
 }
 
 export default Header
+
+
+/*
+
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+*/
