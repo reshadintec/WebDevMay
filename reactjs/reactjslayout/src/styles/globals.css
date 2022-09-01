@@ -137,3 +137,7 @@ img{
 .main-container{
     background-color: rgb(27, 9, 52);
 }
+
+.footer-container {
+    background-color: rgb(12, 2, 24) !important;
+}

@@ -53,7 +53,7 @@ function Home({inputValue,result}) {
         }
       </ul>
 
-      <div className="pagination bg-dark d-flex justify-content-center pb-2">
+      <div className="pagination bg-dark d-flex justify-content-center  pb-5">
         <ButtonGroup aria-label="Basic example">
           <Button variant="primary" onClick={prevPage} className="rounded-0">Previous</Button>
           <Button variant="primary" onClick={nextPage} className="rounded-0">Next</Button>
