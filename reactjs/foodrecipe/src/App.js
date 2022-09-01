@@ -41,3 +41,5 @@ function App(){
 }
 
 export default App;
+
+// Links: https://www.themealdb.com/api.php https://react-bootstrap.netlify.app/components/navbar/#home https://react-icons.github.io/react-icons https://preview.themeforest.net/item/yumma-food-recipe-elementor-template-kit/full_screen_preview/37226306?_ga=2.229065180.1546871661.1662034726-1250130393.1653916987//
