@@ -1,0 +1,16 @@
+.custom-nav{
+    --bs-navbar-color: rgb(0, 0, 0) !important;
+    --bs-navbar-hover-color: #DA5831!important;
+    --bs-navbar-active-color: #DA5831 !important;
+     font-size: 1.2rem !important;
+    --bs-navbar-brand-margin-end: 4rem !important;
+
+}
+
+.icons{
+    font-size: 2rem !important;
+}
+
+.custom-nav.active{
+    background-color: #DA5831;
+}
