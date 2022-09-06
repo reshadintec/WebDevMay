@@ -14,3 +14,46 @@
 .custom-nav.active{
     background-color: #DA5831;
 }
+
+.hero-img{
+    max-width: 100% !important;
+    height: 85vh;
+    object-fit:cover;    
+
+}
+
+.buttons{
+
+        --bs-btn-color: #fff !important;
+        --bs-btn-bg: #da5831 !important;
+        --bs-btn-border-color: #da5831 !important;
+        --bs-btn-hover-color: #fff !important;
+        --bs-btn-hover-bg: #da5831 !important;
+        --bs-btn-hover-border-color: #da5831 !important;
+        --bs-btn-focus-shadow-rgb: 49,132,253 !important;
+        --bs-btn-active-color: #fff !important;
+        --bs-btn-active-bg: #da5831 !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        margin-left: 30rem !important;
+
+    }
+
+   #root{
+        background-color: #F8F6F2 ;
+    }
+
+    .card-buttons{
+        --bs-btn-color: #fff !important;
+        --bs-btn-bg: #da5831 !important;
+        --bs-btn-border-color: #da5831 !important;
+        --bs-btn-hover-color: #fff !important;
+        --bs-btn-hover-bg: #da5831 !important;
+        --bs-btn-hover-border-color: #da5831 !important;
+        --bs-btn-focus-shadow-rgb: 49,132,253 !important;
+        --bs-btn-active-color: #fff !important;
+        --bs-btn-active-bg: #da5831 !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        
+    }
