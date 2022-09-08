@@ -64,3 +64,4 @@ function Home({inputValue,result}) {
 }
 
 export default Home
+

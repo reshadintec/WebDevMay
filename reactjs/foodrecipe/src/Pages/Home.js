@@ -7,13 +7,13 @@ import Card from "react-bootstrap/Card";
 import { fetchData } from "../useFetch";
 
 function Home() {
-
   const [meals, setMeals] = useState({});
 
   useEffect(() => {
-    fetchData("https://www.themealdb.com/api/json/v1/1/random.php").then(
+    fetchData("https://www.themealdb.com/api/json/v1/1/search.php?s=veg").then(
       (data) => {
-        setMeals(data.meals[0]);
+        setMeals(data.meals);
+        console.log(meals);
       }
     );
   }, []);
@@ -34,76 +34,22 @@ function Home() {
           <hr className="my-1" />
         </Row>
         {/* Displaying Cards */}
-        <Row className="my-4">
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={meals.strMealThumb} />
-              <Card.Body>
-                {meals !== undefined || meals !== null ? (
-                  <div>
-                    <h4>{meals.strMeal}</h4>
-                  </div>
-                ) : (
-                  "Loading..."
-                )}
-                <Card.Title></Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button className="card-buttons">View More</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg"
-              />
-              <Card.Body>
-                <Card.Title>Teriyaki Chicken Casserole</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button className="card-buttons">View More</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg"
-              />
-              <Card.Body>
-                <Card.Title>Teriyaki Chicken Casserole</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button className="card-buttons">View More</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg"
-              />
-              <Card.Body>
-                <Card.Title>Teriyaki Chicken Casserole</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button className="card-buttons">View More</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+        {meals !== undefined || meals !== null
+          ? meals.map((item) => (
+                <Row>
+                  <Col md={4}>
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img variant="top" src={item.strMealThumb} />
+                      <Card.Body>
+                        <Card.Title>{item.strMeal}</Card.Title>
+                        <Card.Text>{item.strInstructions}</Card.Text>
+                        <Button className="card-buttons">View More</Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
+            ))
+          : "Loading..."}
       </Container>
     </>
   );
