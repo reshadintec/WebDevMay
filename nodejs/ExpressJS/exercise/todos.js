@@ -1,32 +1,59 @@
-//importing express and mongoose
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express")
+const mongoose = require("mongoose")
+require('dotenv').config()
+const app = express()
+const TodoModel = require("./model")
+mongoose.connect(process.env.MONGO_URI, (err) => console.log("connected"))
 
-//creating the app
-const todo = express();
+app.use(express.json())
 
-const TodoModel = require ("./model")
-//connecting to monogo
-mongoose.connect('monogdb://localhost:27017/todos',(err)=>{
-    console.log('DB Connection successfull')
+app.get('/', (req, res) => {
+    res.send("Welcome to todos restful api v1.0")
 })
 
-//creating a post schema
-const postSchema = mongoose.Schema({
-    userId:Number,
-    id:Number,
-    title:String,
-    completed:Boolean
+// get all todos
+app.get('/todos', (req, res) => {
+    console.log(req.query.username)
+    if (req.query.title !== undefined && req.query.username !== undefined) {
+        TodoModel.find({ title: { $regex: req.query.title }, username: req.query.username })
+            .then(results => {
+                res.json({
+                    message: 'ok',
+                    todos: results
+                })
+            })
+    } else if (req.query.title !== undefined) {
+        TodoModel.find({ title: { $regex: req.query.title } })
+            .then(results => {
+                res.json({
+                    message: 'ok',
+                    todos: results
+                })
+            })
+
+    } else {
+        TodoModel.find({})
+            .then(todos => res.json({ message: 'ok', todos: todos }))
+    }
 })
 
-//
-
-
-
-
-
-//Listening Port
-
-todo.listen(8080,()=>{
-    console.log('You are connected on port 8080')
+// save a todo
+app.post('/todo', (req, res) => {
+    let todo = new TodoModel(req.body)
+    todo.save()
+        .then(result => {
+            res.json({
+                message: 'ok',
+                todo: result
+            })
+        })
 })
+
+
+
+// not found endpoint
+app.get('*', (req, res) => {
+    res.json({ message: 'not found' })
+})
+
+app.listen(process.env.PORT)
