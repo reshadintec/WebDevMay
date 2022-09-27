@@ -16,16 +16,11 @@ app.use(bodyParser({
 //middleware 
 function isUserLogged(req,res,next){
     const {username} = req.query
-    if(username==='admin'){
-        res.json({
-            username:username,
-            msg:'success'
-        })
+    if(username!=='admin'){
+        res.status(401).send('Failed to login')
     }else{
-        res.json({
-            msg:'failed'
-        })}
-    next()
+        next()
+    }
 }
 
 //get request
