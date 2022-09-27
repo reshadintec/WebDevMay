@@ -70,7 +70,7 @@ app.put('/post/:id',(req,res)=>{
 app.delete('/post/:id',(req,res)=>{
     const {id} = req.params
     Post.findByIdAndDelete(id)
-    .then(result=>{
+    .then(result=>{ 
         res.json({
             message:'deleted',
             data:result
