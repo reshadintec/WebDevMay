@@ -1,13 +1,14 @@
+import './App.css'
 import React, { useState } from "react";
 
 function App() {
-  const [age, setAge] = useState(0);
-  const changeValue = () => {
-    setAge(age + 1);
-  };
+  const [count , setCount] = useState(0);
   return (
     <div className="app">
-      {age} <button onClick={changeValue}> Increase Age </button>
+      <button onClick={()=>{setCount(count+1)}}>Increase</button>
+      <button onClick={()=>{setCount(count-1)}}>Decrease</button>
+      <button onClick={()=>{setCount(0)}}>Reset</button>
+      {count}
     </div>
   );
 }

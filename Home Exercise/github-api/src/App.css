@@ -4,4 +4,10 @@
 
 html{
     text-align: center;
+    margin: 50px auto;
+}
+
+button{
+    margin:20px;
+    padding: 10px;
 }
