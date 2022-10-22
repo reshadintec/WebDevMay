@@ -1,5 +1,6 @@
 import './App.css'
 import React, { useState } from "react";
+import { Task } from './Task';
 
 function App() {
   
@@ -32,10 +33,7 @@ function App() {
       </div>
       <div className='list'>
       {todoList.map((task)=>{
-        return <div>
-          <h2>{task.id}:{task.taskName}</h2>
-          <button onClick={()=>deleteTask(task.id)}>X</button>
-          </div>
+        return <Task taskName ={task.taskName} id={task.id} deleteTask={deleteTask}/>
       })}
       </div>
     </div>
