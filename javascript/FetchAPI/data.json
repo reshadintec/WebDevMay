@@ -1,0 +1,26 @@
+{
+  "api": [
+    {
+      "username": "root",
+      "password": "root23",
+      "id": 1
+    },
+    {
+      "username": "admin",
+      "password": "atilla123",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "productType": "A",
+      "productNumer": "123",
+      "id": 1
+    },
+    {
+      "productType": "A",
+      "productNumer": "153",
+      "id": 2
+    }
+  ]
+}
