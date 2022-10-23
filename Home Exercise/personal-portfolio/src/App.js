@@ -6,6 +6,7 @@ import Experience from './pages/Experience'
 function App() {
   return (
     <div className="App">
+      <h2>Hello</h2>
      <Router>
       <Routes>
         <Route path='/' element={<Home/>}/>
