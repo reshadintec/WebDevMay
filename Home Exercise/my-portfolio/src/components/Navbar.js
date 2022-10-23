@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import "../styles/Navbar.css";
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
+  const [expandNavbar,setExpandNavbar] = useState(false);
   return (
     <div className='navbar'>
         <div className='toggleButton'>
-            <button>
+            <button onClick={()=> {
+              setExpandNavbar((prev)=> !prev);}}>
               <MenuIcon/>
             </button>
         </div>
