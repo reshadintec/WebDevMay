@@ -9,6 +9,7 @@ function App() {
   // };
   const [todoList,setTodoList] = useState([]);
   const [newTask,setNewTask] = useState("");
+  const [completed, setCompleted] = useState(false);
   const handleChange = (event)=>{
     setNewTask(event.target.value)
   };
@@ -25,6 +26,12 @@ function App() {
     })
     setTodoList(newTodolist);
   }
+  const completeTask = (id)=>{
+    todoList.map((task)=>{
+      
+    })
+    
+  }
   return (
     <div className="app">
       <div className='addTask'>
@@ -33,7 +40,7 @@ function App() {
       </div>
       <div className='list'>
       {todoList.map((task)=>{
-        return <Task taskName ={task.taskName} id={task.id} deleteTask={deleteTask}/>
+        return <Task taskName ={task.taskName} id={task.id} deleteTask={deleteTask} completeTask={completeTask} completed={completed}/>
       })}
       </div>
     </div>
