@@ -88,7 +88,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2014-2015"
+          date="2017-2019"
           iconStyle={{ background: "#003056", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -102,6 +102,21 @@ function Experience() {
             for new branches in other countries, managing the existing websites
             and managing <span id="highSchool">Basic SEO </span>for all the
             websites specially <a href="http://www.statecorps.com.tr/en/">Statecorps Turkey </a>.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2022-2023"
+          iconStyle={{ background: "#04518C", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            {" "}
+            Web Developer, Intec Brussel, Belgium
+          </h3>
+          <p>
+            I used to develop websites using <span id="highSchool">WordPress and Elementor</span> and in my first job interview in Belgium, I found out that I have to learn technologies and languages that are mainly used here. That is the reason I started the Web Development course in Intec where I learned <span id="highSchool">HTML, CSS, Javascript, ReactJS, NodeJS, ExpressJS MongoDB and NextJS. </span> I have created this personal-portfolio website using ReactJS.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
