@@ -4,8 +4,9 @@ import "../styles/Navbar.css";
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
-  const [expandNavbar,setExpandNavbar] = useState(false);
-
+  //toggling mobile mneu
+    const [expandNavbar,setExpandNavbar] = useState(false);
+    //closing mobile menu after location change 
   const location = useLocation();
 
   useEffect(()=>{

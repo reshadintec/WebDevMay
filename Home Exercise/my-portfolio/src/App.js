@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App">
+      {/* creating Menu */}
       <Router>
         <Navbar/>
         <Routes>
