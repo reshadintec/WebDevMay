@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Projects from "./pages/Projects";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -11,10 +13,11 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/experience' activeClassName="selected" element={<Experience/>}/>
-          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/experience' activeClassName="selected" element={<Experience/>} />
+          <Route path='/projects' element={<Projects />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
