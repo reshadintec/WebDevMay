@@ -15,9 +15,16 @@
   text-align: center;
   background-color: #003056;
   color: #f0f0f0;
-  
 }
-
+.typewriter{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: #F2D03B;
+  height: 50px;
+  font-weight: bold;
+  padding:0 50px;   
+  margin-bottom:100px; 
+}
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
