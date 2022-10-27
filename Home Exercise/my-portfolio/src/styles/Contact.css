@@ -1,0 +1,27 @@
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    flex-direction: column;
+    color: #003056;
+}
+
+.title{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.title h2{
+    color: #000 ;
+    font-size: 60px;
+    line-height: 10px;
+}
+
+.rightsection{
+    width: 100%;
+
+}
