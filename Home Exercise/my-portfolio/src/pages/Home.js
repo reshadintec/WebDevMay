@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import "../styles/Home.css"
 import Typewriter from 'typewriter-effect';
+import { Button } from '@mui/material';
 
 function Home() {
   return (
@@ -21,9 +22,9 @@ function Home() {
         {/* <h2>Hello, This is Ahmad</h2> */}
         <div className='prompt'>
           <p>with a passion for coding, web design and learning.</p>
-          <LinkedInIcon/>
-          <EmailIcon />
-          <GitHubIcon />
+          <Button href="https://www.linkedin.com/in/reshad-hassani-275434158/" target="_blank"> <LinkedInIcon /> </Button>
+          <Button href="mailto:reshadhassani@hotmail.com" target="_blank"> <EmailIcon /> </Button>
+          <Button href="https://github.com/reshadintec" target="_blank"> <GitHubIcon /></Button>
         </div>
       </div>
       <div className='skills'>
