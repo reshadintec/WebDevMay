@@ -21,7 +21,7 @@ function Home() {
         {/* <h2>Hello, This is Ahmad</h2> */}
         <div className='prompt'>
           <p>with a passion for coding, web design and learning.</p>
-          <LinkedInIcon />
+          <LinkedInIcon/>
           <EmailIcon />
           <GitHubIcon />
         </div>
