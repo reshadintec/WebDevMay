@@ -141,4 +141,29 @@ section.hero .down-arrow path {
     background: none;
     text-decoration: underline;
   }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: red;
+  }
+  section.hero {
+    color: black;
+    height: auot;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
 }/*# sourceMappingURL=index.css.map */
