@@ -10,6 +10,18 @@
     color: #003056;
 }
 
+div.leftSection{
+    position: relative;
+    width:100%;
+    left:0;
+    
+}
+
+div.rightSection{
+    position: relative;
+    width:10%;
+    right:0;
+}
 .title{
     text-align: center;
     margin: 50px 0;
@@ -19,11 +31,4 @@
     color: #000 ;
     font-size: 60px;
     line-height: 10px;
-}
-
-.rightsection{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-
 }
