@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectDisplay from './pages/ProjectDisplay';
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/experience' activeClassName="selected" element={<Experience/>} />
           <Route path='/project/:id' element={<ProjectDisplay/>} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>
