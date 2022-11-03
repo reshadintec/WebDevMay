@@ -1,5 +1,4 @@
 .contact{
-    position: relative;
     min-height: 100vh;
     padding: 50px 100px;
     display: flex;
@@ -9,19 +8,37 @@
     flex-direction: column;
     color: #003056;
 }
-
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 3em;
+}
 div.leftSection{
-    position: relative;
-    width:100%;
-    left:0;
-    
+    width:25em;
 }
 
 div.rightSection{
-    position: relative;
-    width:10%;
-    right:0;
+    width:25em;
 }
+div.info1{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 14em;
+    column-gap: 1em;
+}
+div.info1 svg{
+   padding: 10px;
+   width: 20px;
+   height: 20px;
+   background: #003056;
+   border-radius: 50%;
+   fill: white;
+}
+div.info1 p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 .title{
     text-align: center;
     margin: 50px 0;

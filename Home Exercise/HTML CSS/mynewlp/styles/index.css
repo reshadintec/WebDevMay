@@ -166,4 +166,28 @@ section.hero .down-arrow path {
   section.hero svg.down-arrow path {
     fill: black;
   }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 25em;
+  }
+  .feature .content {
+    text-align: right;
+    width: 25em;
+  }
+  .feature.left {
+    grid-template-areas: "left right";
+  }
+  .feature.left img {
+    grid-area: left;
+  }
+  .feature.left .content {
+    text-align: left;
+    width: 25em;
+    justify-self: left;
+  }
 }/*# sourceMappingURL=index.css.map */
