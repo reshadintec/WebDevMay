@@ -13,6 +13,7 @@ export default function Contact() {
         <p>get in touch</p>
         <h2>Contact</h2>
       </div>
+      <div  className='container'>
       <div className='leftSection'>
         <div className="info1">
           <PhoneIcon /> 
@@ -20,15 +21,16 @@ export default function Contact() {
         </div>
         <div className="info1">
           <MailIcon />
-          <p>+32 (0) 492 87 22 03</p>
+          <p>reshadhassani@hotmail.com</p>
         </div>
         <div className="info1">
           <LocationOnIcon />
-          <p>+32 (0) 492 87 22 03</p>
+          <p>Leopoldplein 50, 3500 Hasselt Belgium</p>
         </div>
       </div>
       <div className='rightSection'>
         <ContactForm/>
+      </div>
       </div>
     </div>
   )
