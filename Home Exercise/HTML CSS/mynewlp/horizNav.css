@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+  background-color: #333;
+  margin:0;
+  padding:0;
+}
+
+li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+li a{
+  color:white;
+  padding: 0 20px;
+  text-decoration: none;
+  
+  font-size: 20px;
+}
+
+li:hover{
+  background: black;
+}
+
+.active{
+  background-color: #04AA6D;
+}
+
+.active:hover{
+  background-color: #04AA6D;;
+}
+
+i{
+  float: right;
+  color:#04AA6D;
+  font-size: 24px;
+  right:80px;
+  margin: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+}
