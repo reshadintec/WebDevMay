@@ -1,3 +1,40 @@
+/* body{
+  margin: 0;
+  padding:0;
+} */
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: solid 1px rgb(53, 53, 53);
+}
+li a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black; 
+}
+
+li{
+  border-bottom: 1px solid rgb(53, 53, 53); 
+  text-align: center;
+}
+li:last-child{
+  border-bottom: none;
+}
+
+li a:hover{
+  background-color: #555;
+  color:white;
+}
+
+.active{
+  background-color: #04AA6D;
+  color:white;
+}
+
 h1{
   max-width: 20%;
   border: solid 1px lightslategray;
