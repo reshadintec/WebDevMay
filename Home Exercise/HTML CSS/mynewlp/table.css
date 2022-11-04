@@ -1,0 +1,91 @@
+h1{
+  max-width: 20%;
+  border: solid 1px lightslategray;
+  box-shadow: 2px 2px blanchedalmond;
+  text-align: center;
+  margin: 2em auto;
+}
+table{
+  width: 50%;
+  margin: 1em auto;
+  border-spacing: 0;
+}
+th,td{
+  text-align: center;
+  height: 30px;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #04AA6D;
+  color: white;
+}
+
+tr:nth-child(even){
+  background-color: lightgray;
+}
+
+.fixed{
+  position: fixed;
+  left:0;
+  bottom:0;
+  background: lightgray;
+  border: 1px solid darkgray;
+  padding: 10px;
+  border-radius: 0 10px;
+}
+
+img.zIndex{
+  position: absolute;
+  left:42%;
+  top:300px;
+  z-index: -1;
+  margin-top: 40px;
+}
+
+div.container{
+  margin: 280px 100px 0;
+  overflow: auto;
+}
+
+.container img{
+float: right;
+max-width: 170px;
+}
+
+.container p{
+  border: solid 1px black;
+}
+.container p::first-line{
+  background-color: aquamarine;
+  
+}
+.parentContainer{
+  margin:4em 5em;
+}
+.parentContainer div.box{
+  float:left;
+  width:50%; 
+}
+
+div.box img{
+  position: absolute;
+  max-width: 600px;
+  right:40px;
+}
+div.heroSection{
+  padding: 70px 0;
+}
+
+.heroSection button{
+  background: lightseagreen;
+  border: solid 1px lightseagreen;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.heroSection button:hover{
+  background: darkcyan;
+  color:white;
+}
