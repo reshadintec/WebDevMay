@@ -35,3 +35,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color: #003056;
 }
+
+::placeholder{
+  color:#002f566e;
+}
