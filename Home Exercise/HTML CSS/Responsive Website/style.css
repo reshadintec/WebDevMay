@@ -45,14 +45,32 @@ aside{
   padding:2em;
 }
 
-section{
+.content{
+  flex-direction: column;
   flex:70%;
   padding:2em;
 }
 .featured{
   display: flex;
+  gap:1em;
+  margin: 2em 0;
+  flex-wrap: wrap;
 }
 
+.column{
+  flex:20%;
+}
+@media screen and (max-width:1000px) {
+  .column{
+    flex:40%;
+  }
+}
+
+@media screen and (max-width:600px) {
+    .column{
+      flex: 90%;
+    }
+}
 @media screen and (max-width:800px) {
   .main{
     flex-direction: column;
