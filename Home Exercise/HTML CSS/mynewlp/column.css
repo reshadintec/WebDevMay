@@ -1,0 +1,22 @@
+div p{
+  width: calc(100%-margin-right);
+  margin:30px;
+  column-count: 3;
+  column-gap: 50px;
+  column-rule: 1px solid gray;
+  overflow-x: none;
+}
+
+div h2{
+  column-span: all;
+}
+
+@media screen and (max-width:600px) {
+  div p{
+    display: block;
+    column-count: 1;
+    margin:20px 40px;
+    text-align: center;
+    
+  }
+}
