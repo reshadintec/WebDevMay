@@ -1,0 +1,27 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: darkblue;
+    padding: 2em;
+    gap:10px 40px;
+}
+
+.gridItem{
+    background-color: lightskyblue;
+    border:1px solid black;
+    padding:20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .gridContainer{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .gridContainer{
+        grid-template-columns: auto;
+    }
+}
